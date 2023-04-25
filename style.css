@@ -1,0 +1,42 @@
+/* #region Nav */
+/* padding and margin for nav items */
+.nav-spacing {
+	padding-right: 1.5rem !important;
+	padding-left: 1.5rem !important;
+	padding-top: 1rem !important;
+	padding-bottom: 1rem !important;
+	margin-right: 0.5rem !important;
+	margin-left: 0.5rem !important;
+	margin-top: 1rem !important;
+	margin-bottom: 1rem !important;
+}
+
+/* changes the color of the background of the nav bar */
+.nav-color {
+	background-color: #000;
+}
+
+/* changes the background color of the links */
+.nav-link {
+	background-color: #ADEEE6;
+}
+
+/* the hamburger icon for when the webpage is on a smaller screen */
+.navbar-toggler-icon {
+	--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.80%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* #endregion Nav */
+
+/* #region misc */
+.accent-color {
+	background-color: var(--bs-gray-900);
+}
+/* #endregion misc */
+
+
+.footer-img {
+	width: 60px;
+}
+
+
