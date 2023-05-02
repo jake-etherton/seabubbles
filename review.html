@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- 
+		Author: Kellen Lay
+		File: review.html
+		Date: 4/24/23
+	 -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reviews</title>
+	<!-- Bootstrap style sheet -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<!-- Bootstrap js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<!-- Custom style sheet -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- #region nav -->
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+		<div class="container-fluid accent-color px-0">
+			<!-- logo for seabubbles -->
+			<a class="navbar-brand py-0" href="index.html">
+				<img src="logo-cropped.jpg" alt="Seabubbles Logo" width="150px">
+			</a>
+
+			<!-- dropdown for navbar when the width of the viewport is smaller -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- navbar item list -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link nav-spacing" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-spacing" href="aboutus.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-spacing" href="sights.html">Sights</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active nav-spacing" aria-current="page" href="review.html">Reviews</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- #endregion -->
+
+	<!-- #region content -->
+	<!-- container for main content -->
+	<div class="container py-4">
+		<!-- review form -->
+		<h1 class="text-center">Leave A Review</h1>
+		<div id="review" class="mb-4">
+			<form action="thankyou.html" method="get" id="reviewForm">
+				<!-- name field -->
+				<div class="mb-3">
+					<label for="reviewName" class="form-label">Name</label>
+					<input type="text" name="userName" class="form-control" id="reviewName" aria-describedby="reviewName">
+				</div>
+
+				<!-- review field -->
+				<div class="mb-3">
+					<label for="reviewBody" class="form-label">Review</label>
+					<textarea class="form-control"  name="userReview" id="reviewBody" cols="30" rows="10"></textarea>
+				</div>
+
+				<!-- submit button -->
+				<button type="submit" class="btn btn-success align-items-center">Submit Review</button>
+			</form>
+		</div>
+
+		<!-- previous reviews left using a bs carousel and bs cards -->
+		<h1 class="text-center">Reviews</h1>
+		<div id="reviews" class="mx-auto mb-4 justify-content-center">
+			<!-- carousel -->
+			<div id="reviewsCarousel" class="carousel slide px-5">
+				<!-- carousel container for items -->
+				<div class="carousel-inner">
+					<!-- carousel items -->
+					<div class="carousel-item active">
+						<!-- card for review -->
+						<div class="card review-card">
+							<div class="card-body">
+								<h5 class="card-title">Olivia Rodriguez</h5>
+								<p class="card-text">I had an amazing time diving with Seabubbles! The instructors were
+									knowledgeable, professional, and made sure everyone felt safe and comfortable in the
+									water. The dive sites were stunning, and I saw so much marine life. Can't wait to
+									book my next trip with them!</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<!-- card for review -->
+						<div class="card review-card">
+							<div class="card-body">
+								<h5 class="card-title">Ethan Taylor</h5>
+								<p class="card-text">I've been diving with Seabubbles for years, and I always have a
+									great experience. The staff is friendly and accommodating, and they have a wide
+									range of dives to choose from. Whether you're a beginner or an experienced diver,
+									Seabubbles has something for you. Highly recommend!</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<!-- card for review -->
+						<div class="card review-card">
+							<div class="card-body">
+								<h5 class="card-title">Sophia Patel</h5>
+								<p class="card-text">I'm so glad I chose Seabubbles for my first ever dive. The
+									instructors were patient and supportive, and took the time to explain everything and
+									answer all my questions. I felt completely at ease in the water and saw some
+									incredible marine life. It was an unforgettable experience!</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<!-- card for review -->
+						<div class="card review-card">
+							<div class="card-body">
+								<h5 class="card-title">Caleb Kim</h5>
+								<p class="card-text">The equipment provided by Seabubbles was top-notch and
+									well-maintained. The staff was also very knowledgeable about the gear and made sure
+									we were properly fitted and comfortable before our dives. I appreciated the
+									attention to detail and focus on safety.</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<!-- card for review -->
+						<div class="card review-card">
+							<div class="card-body">
+								<h5 class="card-title">Ava Nguyen</h5>
+								<p class="card-text">I had an amazing dive with Seabubbles! The staff was friendly and
+									knowledgeable, and the dive sites were stunning. I saw incredible marine life and
+									felt completely safe and comfortable throughout the entire experience. Highly
+									recommend!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- carousel prev button -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+
+				<!-- carousel next button -->
+				<button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- #endregion -->
+
+	<!-- #region footer -->
+	<div class="container-fluid text-center accent-color">
+		<footer class="pt-4">
+			<h3 style="color: #fff;">Contact</h3>
+			<!-- footer email link -->
+			<a class="text-decoration-none mx-3" href="mailto:seabubles@gmail.com">
+				<img src="img/gmail-icon.png" alt="Email" class="footer-img">
+			</a>
+			<!-- footer facebook link -->
+			<a class="text-decoration-none mx-3" href="https://www.facebook.com/place-holder">
+				<img src="img/facebook-icon.png" alt="Facebook" class="footer-img">
+			</a>
+			<h6 class="mt-3 mb-0"style="color: #fff;">No ka `oi</h4>
+		</footer>
+	</div>
+	<!-- #endregion -->
+</body>
+
+</html>
